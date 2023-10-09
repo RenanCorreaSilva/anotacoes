@@ -1,0 +1,109 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: blueviolet;
+}
+
+.addTarefa{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: indigo;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 25px; 
+  color: white;
+  font-size: 30px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.boxTarefas{
+  width: 80%;
+  max-width: 800px;
+  background-color: white;
+  padding: 30px 50px;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.boxTarefas h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tarefaSingle{
+  font-size: 15px;
+  padding: 8px 10px;
+  border-bottom: 2px dotted #ccc;
+  display: flex;
+}
+
+.tarefaSingle p{
+  cursor: pointer;
+  width: 80%;
+}
+
+.tarefaSingle span{
+  cursor: pointer;
+}
+
+.modal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modalContent{
+  max-width: 600px;
+  padding: 40px 20px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+}
+
+.modalContent h3{
+  margin-bottom: 30px;
+  text-align: center;
+  color: indigo;
+}
+
+.modalContent p{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modalContent input{
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  border: 1px solid indigo;
+}
+
+.modalContent button{
+  color: white;
+  background-color: indigo;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
